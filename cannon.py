@@ -72,7 +72,7 @@ def move():
 
     for target in targets:
         if not inside(target):
-            return
+            targets.pop(0)
 
     ontimer(move, 5)
 
